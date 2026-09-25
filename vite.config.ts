@@ -5,6 +5,10 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/chapter17/',
+    build: {
+      outDir: 'dist/chapter17',
+    },
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
